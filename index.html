@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        <title>Корочки.есть — Информационный портал по продаже курсов</title>
+        <meta
+            name="description"
+            content="Корочки.есть — курсы, отзывы и каталог. Купить и изучить — просто."
+        />
+    </head>
+    <body>
+        <header>
+            <a class="brand" href="#">
+                <div class="logo">КЕ</div>
+                <div class="site-title">
+                    <span class="name">Корочки.есть</span>
+                </div>
+            </a>
+
+            <nav aria-label="Основное меню">
+                <a href="#catalog">Каталог</a>
+                <a href="#about">О проекте</a>
+                <a href="#contacts">Контакты</a>
+                <a class="primary" href="#catalog">Купить курс</a>
+            </nav>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileBtn"
+                aria-expanded="false"
+                aria-controls="mobileNav"
+            >
+                ☰
+            </button>
+        </header>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О проекте</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#catalog">Купить курс</a>
+        </div>
+
+        <main class="container" role="main">
+            <section class="hero">
+                <div class="hero-card" aria-labelledby="heroTitle">
+                    <h1 id="heroTitle">
+                        Корочки.есть — найдите нужный курс и купите с
+                        уверенностью
+                    </h1>
+                    <p class="lead">
+                        Каталог курсов, честные отзывы, фильтры и быстрые
+                        покупки. Подберите курс по специальности, цене или
+                        рейтингу.
+                    </p>
+
+                    <div class="search-row" role="search">
+                        <input
+                            id="searchInput"
+                            type="search"
+                            placeholder="Поиск по курсам, ключевым словам..."
+                            aria-label="Поиск по курсам"
+                        />
+                        <button class="btn" id="searchBtn">Поиск</button>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="num">120+</div>
+                        <div class="small">Курсов в каталоге</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">4.7 ★</div>
+                        <div class="small">Средний рейтинг</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">15 000+</div>
+                        <div class="small">Учеников за год</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="catalog" aria-labelledby="catalogTitle">
+                <div class="section-title">
+                    <h2 id="catalogTitle" style="margin: 0">
+                        Популярные курсы
+                    </h2>
+                    <a
+                        href="#catalog"
+                        style="
+                            color: var(--muted);
+                            text-decoration: none;
+                            font-size: 14px;
+                        "
+                        >Смотреть все →</a
+                    >
+                </div>
+
+                <div class="grid" id="coursesGrid" role="list">
+                    <!-- Course 1 -->
+                    <article class="card" role="listitem" aria-labelledby="c1">
+                        <div class="thumb">IT</div>
+                        <h3 id="c1">Веб-разработка от нуля до про</h3>
+                        <div class="meta">Формат: онлайн · 120 часов</div>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price">4 900 ₽</div>
+                            <button
+                                class="buy"
+                                data-course="Веб-разработка от нуля до про"
+                            >
+                                Купить
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Course 2 -->
+                    <article class="card" role="listitem" aria-labelledby="c2">
+                        <div class="thumb">ДИЗ</div>
+                        <h3 id="c2">Дизайн интерфейсов: практика</h3>
+                        <div class="meta">Формат: онлайн · 60 часов</div>
+                        <div class="tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UX</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price">3 200 ₽</div>
+                            <button
+                                class="buy"
+                                data-course="Дизайн интерфейсов: практика"
+                            >
+                                Купить
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Course 3 -->
+                    <article class="card" role="listitem" aria-labelledby="c3">
+                        <div class="thumb">МАР</div>
+                        <h3 id="c3">Маркетинг и таргет. с нуля</h3>
+                        <div class="meta">Формат: онлайн · 40 часов</div>
+                        <div class="tags">
+                            <span class="tag">SMM</span>
+                            <span class="tag">Таргет</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price">2 400 ₽</div>
+                            <button
+                                class="buy"
+                                data-course="Маркетинг и таргет. с нуля"
+                            >
+                                Купить
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Course 4 -->
+                    <article class="card" role="listitem" aria-labelledby="c4">
+                        <div class="thumb">АН</div>
+                        <h3 id="c4">Аналитика данных: Python для бизнеса</h3>
+                        <div class="meta">Формат: онлайн · 80 часов</div>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price">5 500 ₽</div>
+                            <button
+                                class="buy"
+                                data-course="Аналитика данных: Python для бизнеса"
+                            >
+                                Купить
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Course 5 -->
+                    <article class="card" role="listitem" aria-labelledby="c5">
+                        <div class="thumb">БИЗ</div>
+                        <h3 id="c5">Бизнес-старт: как запустить продукт</h3>
+                        <div class="meta">Формат: онлайн · 50 часов</div>
+                        <div class="tags">
+                            <span class="tag">Запуск</span>
+                            <span class="tag">Маркетплейс</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price">3 900 ₽</div>
+                            <button
+                                class="buy"
+                                data-course="Бизнес-старт: как запустить продукт"
+                            >
+                                Купить
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Course 6 -->
+                    <article class="card" role="listitem" aria-labelledby="c6">
+                        <div class="thumb">ЯЗ</div>
+                        <h3 id="c6">Английский для IT-специалистов</h3>
+                        <div class="meta">Формат: онлайн · 30 часов</div>
+                        <div class="tags">
+                            <span class="tag">English</span>
+                            <span class="tag">Технический</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price">2 100 ₽</div>
+                            <button
+                                class="buy"
+                                data-course="Английский для IT-специалистов"
+                            >
+                                Купить
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" style="margin-top: 28px">
+                <h2 style="margin-bottom: 8px">О проекте</h2>
+                <p class="lead" style="max-width: 900px">
+                    «Корочки.есть» — каталог курсов с подробными карточками,
+                    отзывами и удобной оплатой. Мы стараемся собирать
+                    проверенные предложения и помогать вам выбрать подходящий
+                    курс быстро и честно.
+                </p>
+            </section>
+
+            <section
+                id="contacts"
+                style="margin-top: 20px; margin-bottom: 40px"
+            >
+                <h2 style="margin-bottom: 8px">Контакты</h2>
+                <form
+                    style="
+                        display: grid;
+                        grid-template-columns: 1fr 300px;
+                        gap: 12px;
+                        max-width: 900px;
+                    "
+                >
+                    <input
+                        type="text"
+                        placeholder="Ваше имя"
+                        aria-label="Имя"
+                        style="
+                            padding: 10px;
+                            border-radius: 10px;
+                            border: 1px solid #e6e9ef;
+                        "
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        aria-label="Email"
+                        style="
+                            padding: 10px;
+                            border-radius: 10px;
+                            border: 1px solid #e6e9ef;
+                        "
+                    />
+                    <textarea
+                        placeholder="Сообщение"
+                        rows="4"
+                        style="
+                            grid-column: 1 / -1;
+                            padding: 10px;
+                            border-radius: 10px;
+                            border: 1px solid #e6e9ef;
+                        "
+                    ></textarea>
+                    <button
+                        class="btn"
+                        type="submit"
+                        style="grid-column: 2 / 3; justify-self: end"
+                    >
+                        Отправить
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <footer
+            style="
+                padding: 22px;
+                background: transparent;
+                color: var(--muted);
+                text-align: center;
+            "
+        >
+            <div
+                class="container"
+                style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                "
+            >
+                <div>© <strong>Корочки.есть</strong> — 2025</div>
+                <div style="font-size: 13px">
+                    Политика конфиденциальности · Условия
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
